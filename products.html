@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="shortcut Icon" type="image/png" href="icon/pawfect.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    .navbar a.active {
+   color: white; 
+   background-color: var(--light-orange-color); 
+   border-radius: 5rem; 
+}
+
+.container{
+  margin-top: 100px;
+}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="icon/pawfect.png" alt="Logo" width="150" height="auto">
+      <a href="index.html" class="logo">Pawfect Petshop</a>
+    </div>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html"class="active">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+
+    <div class="icons">
+      <i class='bx bx-search'></i>
+      <i class="bx bx-user" id="userIcon"></i>
+      <div id="userProfile" style="display: none;">
+          <h3>Welcome, User!</h3>
+          <p>Please Log In first!</p>
+      </div>
+      <i class='bx bx-shopping-bag'></i>
+    </div>
+  </header>
+
+
+  <div class="container">
+
+    <div class="category">
+      <h2> CAT FOOD </h2>
+      <div class="products">
+        <div class="product-card">
+          <img src="Products/Royal Canin Digestive Care.png" alt="Cat Food" style="width: 50%; height: 50%;">
+          <h3>Royal Canin</h3>
+          <p>Royal Canin Digestive Care 4kg Dry Cat Food </p>
+          <p class="price">RM 144.48</p>
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Royal Canin Hair & Skin.png" alt="Cat Food" style="width: 50%; height: 50%;">
+          <h3>Royal Canin</h3>
+          <p>Royal Canin Hair & Skin 10kg Dry Cat Food</p>
+          <p class="price">Rm 344.88</p>
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Royal Canin Urinary Care.png" alt="Cat Food" style="width: 50%; height: 50%;">
+          <h3>Royal Canin</h3>
+          <p>Royal Canin Urinary Care 4kg Dry Cat Food</p>
+          <p class="price">RM 144.48</p>
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Royal Canin Wet Hair & Skin Pouch.png" alt="Cat Food" style="width: 50%; height: 50%;">
+          <h3>Royal Canin</h3>
+          <p>Royal Canin Wet Hair & Skin Pouch 85g Wet Cat Food</p>
+          <p class="price">RM 3.96</p>
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Royal Canin Wet Sterilised Pouch.png" alt="Cat Food" style="width: 50%; height: 50%;">
+          <h3>Royal Canin</h3>
+          <p>Royal Canin Wet Sterilised Pouch 85g Wet Cat Food</p>
+          <p class="price">RM 3.96</p>
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Royal Canin Wet Instinctive Pouch.png" alt="Cat Food" style="width: 50%; height: 50%;">
+          <h3>Royal Canin</h3>
+          <p>Royal Canin Wet Instinctive Pouch 85g Wet Cat Food</p>
+          <p class="price">RM 3.96</p>
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Whiskas Mackerel Dry Cat Food.jpg" alt="Cat Food" style="width: 50%; height: 50%;">
+          <h3>Whiskas</h3>
+          <p>Whiskas Mackerel Dry Cat Food 1.2KG</p>
+          <p class="price">RM 17.20</p>
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Whiskas Kitten Ocean Fish Dry Cat Food.jpg" alt="Cat Food"
+            style="width: 50%; height: 50%;">
+          <h3>Whiskas</h3>
+          <p>Whiskas Kitten Ocean Fish Dry Cat Food 1.1KG.</p>
+          <p class="price">RM 17.80</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Whiskas Senior Mackerel Cat Food.jpg" alt="Cat Food" style="width: 50%; height: 50%;">
+          <h3>Whiskas</h3>
+          <p>Whiskas Senior Mackerel Cat Food 1.1kg</p>
+          <p class="price">RM 17.20</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Whiskas Dry Cat food Tuna Flavor.jpg" alt="Cat Food" style="width: 50%; height: 50%;">
+          <h3>Whiskas</h3>
+          <p>Whiskas Dry Cat food Tuna Flavor 1.2KG</p>
+          <p class="price">RM 17.20</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Whiskas Adult Years 1+ Skin & Coat (Chicken & Salmon Flavour).jpg" alt="Cat Food"
+            style="width: 50%; height: 50%;">
+          <h3>Whiskas</h3>
+          <p>Whiskas Adult Years 1+ Skin & Coat 1.1kg</p>
+          <p class="price">RM 17.20</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/WHISKAS GRILLED SABA DRY.jpg" alt="Cat Food" style="width: 50%; height: 50%;">
+          <h3>Whiskas</h3>
+          <p>WHISKAS GRILLED SABA DRY C/ FOOD 1.2KG</p>
+          <p class="price">RM 17.20</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Whiskas Pouch Real Fish Tuna.jpg" alt="Cat Food" style="width: 50%; height: 50%;">
+          <h3>Whiskas</h3>
+          <p>Whiskas Pouch Real Fish Tuna 80g</p>
+          <p class="price">RM 2.50</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Whiskas Pouch 1+ Years (Grilled Saba Flavour).jpg" alt="Cat Food"
+            style="width: 50%; height: 50%;">
+          <h3>Whiskas</h3>
+          <p>Whiskas Pouch 1+ Years (Grilled Saba Flavour) 80g</p>
+          <p class="price">RM 2.50</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Whiskas Pouch Chicken and Tuna.jpg" alt="Cat Food" style="width: 50%; height: 50%;">
+          <h3>Whiskas</h3>
+          <p>Whiskas Pouch Chicken and Tuna 85g</p>
+          <p class="price">RM 2.50</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Purina One Healthy Kitten Chicken Dry Cat Food.jpg" alt="Cat Food"
+            style="width: 50%; height: 50%;">
+          <h3>Purina</h3>
+          <p>Purina One Healthy Kitten Chicken Dry Cat Food 1.2kg</p>
+          <p class="price">RM 44.50</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Purina One Healthy Adult Salmon and Tuna Dry Cat Food.jpg" alt="Cat Food"
+            style="width: 50%; height: 50%;">
+          <h3>Purina</h3>
+          <p>Purina One Healthy Adult Salmon and Tuna Dry Cat Food 1.2kg</p>
+          <p class="price">RM 52.40</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Purina One Indoor Advantage Chicken Dry Cat Food.jpg" alt="Cat Food"
+            style="width: 50%; height: 50%;">
+          <h3>Purina</h3>
+          <p>Purina One Indoor Advantage Chicken Dry Cat Food 1.2kg</p>
+          <p class="price">RM 44.50</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Purina Fancy Feast Royale Seafood Chicken Medley in Tuna Jus Wet Cat Food 85g.jpg"
+            alt="Cat Food" style="width: 50%; height: 50%;">
+          <h3>Purina</h3>
+          <p>Purina Fancy Feast Royale Seafood Chicken Medley in Tuna Jus Wet Cat Food 85g</p>
+          <p class="price">RM 5.40</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Purina Fancy Feast Royale Roasted Succulent Chicken Wet Cat Food.jpg" alt="Cat Food"
+            style="width: 50%; height: 50%;">
+          <h3>Purina</h3>
+          <p>Purina Fancy Feast Royale Roasted Succulent Chicken Wet Cat Food 85g</p>
+          <p class="price">RM 5.40</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Purina Fancy Feast Adult Royale Tuna Whitemeat Supreme Wet Cat Food.jpg" alt="Cat Food"
+            style="width: 50%; height: 50%;">
+          <h3>Purina</h3>
+          <p>Purina Fancy Feast Adult Royale Tuna Whitemeat Supreme Wet Cat Food 85g</p>
+          <p class="price">RM 5.40</p>
+ 
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2> DOG FOOD </h2>
+      <div class="products">
+        <div class="product-card">
+          <img src="Products/Royal Canin Mini Adult 2kg Dry Dog Food.png" alt="Dog Food"
+            style="width: 50%; height: 50%;">
+          <h3>Royal Canin</h3>
+          <p>Royal Canin Mini Adult 2kg Dry Dog Food </p>
+          <p class="price">Rm 56.88</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Royal Canin Medium Adult 4kg Dry Dog Food.png" alt="Dog Food"
+            style="width: 50%; height: 50%;">
+          <h3>Royal Canin</h3>
+          <p>Royal Canin Medium Adult 4kg Dry Dog Food g</p>
+          <p class="price">Rm 95.68</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Royal Canin Maxi Adult 4kg Dry Dog Food.png" alt="Dog Food"
+            style="width: 50%; height: 50%;">
+          <h3>Royal Canin</h3>
+          <p>Royal Canin Maxi Adult 4kg Dry Dog Food</p>
+          <p class="price">Rm 95.68</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Royal Canin Mini Puppy 2kg Dry Dog Food.png" alt="Dog Food"
+            style="width: 50%; height: 50%;">
+          <h3>Royal Canin</h3>
+          <p>Royal Canin Mini Puppy 2kg Dry Dog Food</p>
+          <p class="price">Rm 59.92</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Royal Canin Medium Puppy 10kg Dry Dog Food.png" alt="Dog Food"
+            style="width: 50%; height: 50%;">
+          <h3>Royal Canin</h3>
+          <p>Royal Canin Medium Puppy 10kg Dry Dog Food</p>
+          <p class="price">Rm 228.72</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/Royal Canin Maxi Puppy 4kg Dry Dog Food.png" alt="Dog Food"
+            style="width: 50%; height: 50%;">
+          <h3>Royal Canin</h3>
+          <p>Royal Canin Maxi Puppy 4kg Dry Dog Food</p>
+          <p class="price">Rm 100.64</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/PURINA PRO PLAN OPTIDERMA ADULT SENSITIVE SKIN.jpg" alt="Dog Food"
+            style="width: 50%; height: 50%;">
+          <h3>Purina</h3>
+          <p>PRO PLAN OPTIDERMA ADULT SENSITIVE SKIN 2.5kg</p>
+          <p class="price">Rm 98.00</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/PURINA PRO PLAN OPTIDIGEST ADULT SENSITIVE DIGESTION 12kg.jpg" alt="Dog Food"
+            style="width: 50%; height: 50%;">
+          <h3>Purina</h3>
+          <p>PRO PLAN OPTIDIGEST ADULT SENSITIVE DIGESTION </p>
+          <p class="price">Rm 236.00</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/PURINA PROPLAN OPTI POWER ADULT PERFORMANCE.jpg" alt="Dog Food"
+            style="width: 50%; height: 50%;">
+          <h3>Purina</h3>
+          <p>PROPLAN OPTI POWER ADULT PERFORMANCE 12kg</p>
+          <p class="price">Rm 236.00</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/PURINA PRO PLAN OPTIDERMA PUPPY SENSITIVE SKIN.jpg" alt="Dog Food"
+            style="width: 50%; height: 50%;">
+          <h3>Purina</h3>
+          <p>PRO PLAN OPTIDERMA PUPPY SENSITIVE SKIN 2.5kg</p>
+          <p class="price">Rm 98.00</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/PURINA PRO PLAN OPTIDIGEST PUPPY SENSITIVE DIGESTION 2.5kg.jpg" alt="Dog Food"
+            style="width: 50%; height: 50%;">
+          <h3>Purina</h3>
+          <p>PRO PLAN OPTIDIGEST PUPPY SENSITIVE DIGESTION 2.5kg</p>
+          <p class="price">Rm 80.00</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/PURINA PRO PLAN OPTISTART PUPPY SMALL BREED.jpg" alt="Dog Food"
+            style="width: 50%; height: 50%;">
+          <h3>Purina</h3>
+          <p>PRO PLAN OPTISTART PUPPY SMALL BREED 2.5kg</p>
+          <p class="price">Rm 82.00</p>
+ 
+        </div>
+
+      </div>
+    </div>
+
+    <div class="category">
+      <h2> Pets Vitamin & Supplements </h2>
+      <div class="products">
+        <div class="product-card">
+          <img src="Products/Cosy Pet Multi Vitamin 10ml.jpg" alt="Vitamin" style="width: 50%; height: 50%;">
+          <h3>COSY PET</h3>
+          <p>COSY PET MULTI-VITAMIN 10ml</p>
+          <p class="price">RM 9.90</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/COSY PET MULTI-VITAMIN 20ml.jpg" alt="Vitamin" style="width: 50%; height: 50%;">
+          <h3>COSY PET</h3>
+          <p>Cosy Pet Multi Vitamin 20ml</p>
+          <p class="price">RM 16.90</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="products/VITA-C SMALL ANIMALS 90g.jpg" alt="Vitamin" style="width: 50%; height: 50%;">
+          <h3>CHUBBY</h3>
+          <p>VITA-C SMALL ANIMALS 90g.</p>
+          <p class="price">Rm 41.00</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="products/NATURAL ACEROLA C TABLET 60s.jpg" alt="Supplements" style="width: 50%; height: 50%;">
+          <h3>PAWPY KITTIES</h3>
+          <p>NATURAL ACEROLA C TABLET 60s</p>
+          <p class="price">Rm 41.50</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="products/PAPAYA N-ZYME PLUS TABLET 60s.jpg" alt="Supplements" style="width: 50%; height: 50%;">
+          <h3>PAWPY KITTIES</h3>
+          <p>PAPAYA N-ZYME PLUS TABLET 60s</p>
+          <p class="price">Rm 41.50</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="products/CRITICAL CARE 36g.jpg" alt="Supplements" style="width: 50%; height: 50%;">
+          <h3>OXBOW</h3>
+          <p>CRITICAL CARE 36g</p>
+          <p class="price">Rm 34.90</p>
+ 
+        </div>
+
+      </div>
+    </div>
+
+    <div class="category">
+      <h2> Pets Litter Box & Sands </h2>
+      <div class="products">
+        <div class="product-card">
+          <img src="Products/CAT TRAY WITH SCOOP.jpg" alt="Box Litter" alt="Pet Litter"
+            style="width: 50%; height: 50%;">
+          <h3>ACE PET</h3>
+          <p>CAT TRAY WITH SCOOP</p>
+          <p class="price">Rm 77.90</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/PET PAN WITH SCOOP.jpg" alt="Box Litter" alt="Pet Litter" style="width: 50%; height: 50%;">
+          <h3>ACE PET</h3>
+          <p>PET PAN WITH SCOOP</p>
+          <p class="price">Rm 51.80</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/CAT LITTER SCOOP EXTRA STRONG.jpg" alt="Box Litter" alt="Pet Litter"
+            style="width: 50%; height: 50%;">
+          <h3>SAVIC</h3>
+          <p>CAT LITTER SCOOP EXTRA STRONG</p>
+          <p class="price">Rm 8.50</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/SUPER PREMIUM CAT LITTER - TOFU 10 LITRE.jpg" alt="Box Litter" alt="Pet Litter"
+            style="width: 50%; height: 50%;">
+          <h3>TRUSTIE</h3>
+          <p>SUPER PREMIUM CAT LITTER - TOFU 10 LITRE</p>
+          <p class="price">Rm 39.80</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/CATSAN ULTRA 5 LITRE.jpg" alt="Box Litter" alt="Pet Litter"
+            style="width: 50%; height: 50%;">
+          <h3>CATSAN</h3>
+          <p>CATSAN ULTRA 5 LITRE</p>
+          <p class="price">Rm 17.40</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="Products/TOFU CAT LITTER - CHARCOAL 7L.jpg" alt="Box Litter" alt="Pet Litter"
+            style="width: 50%; height: 50%;">
+          <h3>MY</h3>
+          <p>TOFU CAT LITTER - CHARCOAL 7L</p>
+          <p class="price">Rm 26.50</p>
+ 
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2> Pets Accessories </h2>
+      <div class="products">
+        <div class="product-card">
+          <img src="products/UTILITY LUMBERJACK COLLAR - RED (X-LARGE).jpg" alt="Pet Collar"
+            style="width: 50%; height: 50%;">
+          <h3>ROGZ</h3>
+          <p>UTILITY LUMBERJACK COLLAR - RED (X-LARGE)</p>
+          <p class="price">Rm 41.15</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="products/URBAN COLLAR (PINK) (MEDIUM).jpg" alt="Pet Collar" style="width: 50%; height: 50%;">
+          <h3>ROGZ</h3>
+          <p>URBAN COLLAR (PINK) (MEDIUM)</p>
+          <p class="price">Rm 40.90</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="products/RIGHT SIZE ADJUSTABLE HARNESS.jpg" alt="Pet Collar" style="width: 50%; height: 50%;">
+          <h3>ADUCK</h3>
+          <p>RIGHT SIZE ADJUSTABLE HARNESS 5/8 INCHES</p>
+          <p class="price">Rm 47.15</p>
+ 
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2> Toys & Entertaimment </h2>
+      <div class="products">
+        <div class="product-card">
+          <img src="products/ADUCK CATNIP SOFT CAT TOYS SET CARP FISH.jpg" alt="Pet Toys" style="width: 50%; height: 50%;">
+          <h3>ADUCK</h3>
+          <p>ADUCK CATNIP SOFT CAT TOYS SET CARP FISH</p>
+          <p class="price">RM 19.42</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="products/Aduck Catnip Soft Cat Toys Set Salmon Fish Tail.jpg" alt="Pet Toys" style="width: 50%; height: 50%;">
+          <h3>ADUCK</h3>
+          <p>ADUCK CATNIP SOFT CAT TOYS SET SALMON FISH TAIL</p>
+          <p class="price">Rm 19.42</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="products/Aduck Catnip Soft Cat Toys Grey Fish 18cm.jpg" alt="Pet Toys" style="width: 50%; height: 50%;">
+          <h3>ADUCK</h3>
+          <p>ADUCK CATNIP SOFT CAT TOYS GREY FISH 18cm</p>
+          <p class="price">Rm 5.17</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="products/Aduck Frisbee Interactive Dog Toys Medium 17.5cm.jpg" alt="Pet Toys" style="width: 50%; height: 50%;">
+          <h3>ADUCK</h3>
+          <p>ADUCK FRISBEE INTERACTIVE DOG TOYS MEDIUM 17.5cm</p>
+          <p class="price">Rm 18.67</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="products/Aduck Donut Dog Chew Toys In Pink 10cm.jpg" alt="Pet Toys" style="width: 50%; height: 50%;">
+          <h3>ADUCK</h3>
+          <p>ADUCK DONUT DOG CHEW TOYS IN PINK 1ocm</p>
+          <p class="price">Rm 8.92</p>
+ 
+        </div>
+
+        <div class="product-card">
+          <img src="products/Aduck Durable Pet Interactive Doll Dog Plush.jpg" alt="Pet Toys" style="width: 50%; height: 50%;">
+          <h3>ADUCK</h3>
+          <p>ADUCK DURABLE PET INTERACTIVE DOLL DOG PLUSH</p>
+          <p class="price">Rm 19.42</p>
+ 
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <section class="footer" id="footer">
+    <div class="footer-container">
+       <div class="footer-box">
+          <a href="index.html" class="logo">Pawfect Petshop</a>
+          <p>
+            <a href="https://www.google.com/maps/place/Lorong+Uni-Central+2,+94300+Kota+Samarahan,+Sarawak" 
+            target="_blank" rel="noopener noreferrer">
+               Lorong Uni-Central 2, 94300, Kota Samarahan, Sarawak
+            </a>
+         </p>
+         
+          <div class="social">
+            <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-facebook'></i>
+             </a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+           <i class='bx bxl-twitter'></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+           <i class='bx bxl-instagram'></i>
+        </a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+           <i class='bx bxl-github'></i>
+        </a>
+          </div>
+       </div>
+ 
+       <div class="footer-box">
+          <h2>Customer Care</h2>
+          <a href="#" id="helpLink">Help Centre</a>
+
+          <script>
+          document.getElementById('helpLink').addEventListener('click', function(event) {
+             event.preventDefault();
+             alert("For help, check out our FAQ section or reach out to us at support@pawfectpetshop.com");
+          });
+          </script>
+          
+          <a href="contact.html">Contact Us</a>
+       </div>
+ 
+       <div class="footer-box">
+          <h2>Company</h2>
+          <a href="about.html">About Us</a>
+          <a href="#" id="joinLink">Join Our Team</a>
+
+          <script>
+          document.getElementById('joinLink').addEventListener('click', function(event) {
+             event.preventDefault();
+             alert("Interested in joining us? Please send your resume to jobs@pawfectpetshop.com.");
+          });
+          </script>
+          
+       </div>
+
+       <div class="footer-box">
+        <h2>Newsletter</h2>
+        <p>Get 10% Discount with <br>Email Newsletter</p>
+        <form id="newsletterForm">
+           <input type="email" id="email" placeholder="Enter Your Email" required>
+           <button type="submit">Subscribe</button>
+        </form>
+        <br>
+        <p id="thankYouMessage" style="display: none;">Thank you for subscribing!</p>
+     </div>
+     
+     <script>
+     document.getElementById('newsletterForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        const email = document.getElementById('email').value;
+        if (email) {
+           document.getElementById('thankYouMessage').style.display = 'block';
+           document.getElementById('email').value = '';
+        } else {
+           alert("Please enter a valid email address.");
+        }
+     });
+     </script>
+     
+    </div>
+
+<div class="footer-bottom">
+<p>© 2025 Pawfect Petshop. All Rights Reserved.</p>
+<p><i>This website is created for academic purposes to fulfill the requirements of the individual assignment for Introduction to Web Content Management & Design (IMD318).</i></p>
+<p><i>Developed by a group of UiTM students.</i></p>
+</div>
+ </section>
+ 
+
+ 
+ <script src="main.js"></script>
+
+</body>
+
+</html>

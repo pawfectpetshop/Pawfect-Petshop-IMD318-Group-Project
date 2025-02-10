@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Pawfect Petshop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel= "shortcut Icon" type="image/png" href="icon/pawfect.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+ 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 3px 100px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+
+
+
+        header .logo-container img {
+            width: 150px;
+            height: auto;
+            margin-right: 10px;
+            animation: bounce 2s infinite;
+        }
+
+
+
+.navbar a.active {
+   color: white; 
+   background-color: var(--light-orange-color);
+   border-radius: 5rem; 
+}
+
+
+        .hero {
+            background: linear-gradient(to bottom, rgba(255, 126, 0, 0.8), rgba(255, 111, 47, 0.8)), url('images/about.jpg') center/cover no-repeat;
+            padding: 150px 30px;
+            text-align: center;
+            color: white;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+        }
+
+        .hero .btn {
+            background-color: #ff7e00;
+            padding: 12px 30px;
+            border-radius: 25px;
+            border-color: #fff;
+            color: white;
+            font-size: 16px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .hero .btn:hover {
+            background-color: #ff9a33;
+            transform: scale(1.1);
+        }
+
+        .about-us {
+            padding-top: 120px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-container {
+            background-color: #fff;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .section-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-container h2 {
+            font-size: 2rem;
+            color: #ff7e00;
+            margin-bottom: 15px;
+        }
+        
+
+        .section-container ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
+        .section-container ul li {
+            margin-bottom: 10px;
+            opacity: 0;
+            animation: fadeInUp 0.5s forwards;
+        }
+
+        .section-container ul li:nth-child(1) { animation-delay: 0.2s; }
+        .section-container ul li:nth-child(2) { animation-delay: 0.4s; }
+        .section-container ul li:nth-child(3) { animation-delay: 0.6s; }
+        .section-container ul li:nth-child(4) { animation-delay: 0.8s; }
+        .section-container ul li:nth-child(5) { animation-delay: 1s; }
+       
+        .values {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .value {
+            text-align: center;
+            flex: 1;
+        }
+
+        .value i {
+            font-size: 40px;
+            color: #ff7e00;
+            margin-bottom: 20px;
+        }
+
+        .value p {
+            font-size: 1.2rem;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+  
+    <header>
+        <div class="logo-container">
+            <img src="icon/pawfect.png" alt="Logo" width="150" height="auto">
+            <a href="index.html" class="logo">Pawfect Petshop</a>
+        </div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <div class="navbar">
+           <li><a href="index.html" class=>Home</a></li>
+           <li><a href="about.html"class="active">About Us</a></li>
+           <li><a href="products.html">Products</a></li>
+           <li><a href="contact.html">Contact</a></li>
+  
+        </div>
+  
+        <div class="icons">
+           <i class='bx bx-search'></i>
+           <i class="bx bx-user" id="userIcon"></i>
+           <div id="userProfile" style="display: none;">
+               <h3>Welcome, User!</h3>
+               <p>Please Log In first!</p>
+           </div>
+           <i class='bx bx-shopping-bag'></i>
+        </div>
+     </header>
+
+
+    <div class="hero">
+        <h1>About Us</h1>
+        <p>Your Trusted Partner for Pet Needs</p>
+        <button class="btn" onclick="document.getElementById('our-story').scrollIntoView({ behavior: 'smooth' });">Learn More</button>
+    </div>
+
+    <section class="about-us">
+        <div class="section-container" id="our-story">
+            <p><center>Pawfect Pets is a one-stop shop for everything pet-related. We offer high-quality products and exceptional services to meet the specific needs of our customers' furry, feathered, and scaled friends.</center></p>
+            <p><center>Our shop was developed with pets and their owners in mind, providing a welcoming environment where our customers can browse at their leisure and find everything they need to keep their pets happy and healthy.</center></p>
+        </div>
+
+        <div class="section-container">
+            <h2>Our Vision</h2>
+            <p><b>"Quality Supplies for Happy, Healthy Pets"</b></p> <br>
+            <p>We aim to be the go-to destination for pet owners by offering top-quality, safe, and functional products that ensure the health and happiness of their beloved pets.</p>
+        </div>
+
+        <div class="section-container">
+            <h2>Our Mission</h2>
+            <ul>
+                <li>- To be the go-to destination for pet owners seeking everything they need for their pets' happy and healthy lives.</li>
+                <li>- To create a welcoming and knowledgeable environment for pet owners.</li>
+                <li>- To offer a wide range of high-quality products tailored to the unique needs of every pet.</li>
+                <li>- To foster a community that celebrates the joy and love pets bring to our lives.</li>
+                <li>- To be a trusted partner on every pet parenting journey.</li>
+            </ul>
+        </div>
+
+        <div class="section-container">
+            <h2>Our Goal</h2>
+            <p>To provide reliable, safe products that enhance pets' health and well-being. We prioritize exceptional customer service, knowledgeable staff, efficient delivery, and a convenient shopping experience to make it easy for pet owners to find everything they need.</p>
+        </div>
+
+        <div class="section-container">
+        <div class="values">
+         <h2>Core Values</h2>
+         <div class="value">
+             <i class="icon">💖</i>
+             <p>Integrity</p>
+         </div>
+         <div class="value">
+             <i class="icon">🌱</i>
+             <p>Care & Responsibility</p>
+         </div>
+         <div class="value">
+             <i class="icon">🤝</i>
+             <p>Customer First</p>
+         </div>
+     </div>
+
+              </div>
+
+    </section>
+
+    <section class="video-gallery">
+        <div class="section-container">
+           <h2>Our Videos</h2>
+           <div class="video-grid">
+              <div class="video-item">
+                 <video controls>
+                    <source src="video/dog.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                 </video>
+                 <div class="tooltip">No Sound</div>
+              </div>
+              <div class="video-item">
+                 <video controls>
+                    <source src="video/meow.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                 </video>
+                 <div class="tooltip">No Sound</div>
+              </div>
+              <div class="video-item">
+                 <video controls>
+                    <source src="video/play kitten.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                 </video>
+              </div>
+              <div class="video-item">
+                 <video controls>
+                    <source src="video/puppy.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                 </video>
+                 <div class="tooltip">No Sound</div>
+              </div>
+           </div>
+        </div>
+     </section>
+     
+
+     <section class="footer" id="footer">
+        <div class="footer-container">
+           <div class="footer-box">
+              <a href="index.html" class="logo">Pawfect Petshop</a>
+              <p>
+                <a href="https://www.google.com/maps/place/Lorong+Uni-Central+2,+94300+Kota+Samarahan,+Sarawak" 
+                target="_blank" rel="noopener noreferrer">
+                   Lorong Uni-Central 2, 94300, Kota Samarahan, Sarawak
+                </a>
+             </p>
+             
+              <div class="social">
+                <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer">
+                    <i class='bx bxl-facebook'></i>
+                 </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+               <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+               <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+               <i class='bx bxl-github'></i>
+            </a>
+              </div>
+           </div>
+     
+           <div class="footer-box">
+              <h2>Customer Care</h2>
+              <a href="#" id="helpLink">Help Centre</a>
+
+              <script>
+              document.getElementById('helpLink').addEventListener('click', function(event) {
+                 event.preventDefault();
+                 alert("For help, check out our FAQ section or reach out to us at support@pawfectpetshop.com");
+              });
+              </script>
+              
+              <a href="contact.html">Contact Us</a>
+           </div>
+     
+           <div class="footer-box">
+              <h2>Company</h2>
+              <a href="about.html">About Us</a>
+              <a href="#" id="joinLink">Join Our Team</a>
+
+              <script>
+              document.getElementById('joinLink').addEventListener('click', function(event) {
+                 event.preventDefault();
+                 alert("Interested in joining us? Please send your resume to jobs@pawfectpetshop.com.");
+              });
+              </script>
+              
+           </div>
+
+           <div class="footer-box">
+            <h2>Newsletter</h2>
+            <p>Get 10% Discount with <br>Email Newsletter</p>
+            <form id="newsletterForm">
+               <input type="email" id="email" placeholder="Enter Your Email" required>
+               <button type="submit">Subscribe</button>
+            </form>
+            <br>
+            <p id="thankYouMessage" style="display: none;">Thank you for subscribing!</p>
+         </div>
+         
+         <script>
+         document.getElementById('newsletterForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            const email = document.getElementById('email').value;
+            if (email) {
+               document.getElementById('thankYouMessage').style.display = 'block';
+               document.getElementById('email').value = '';
+            } else {
+               alert("Please enter a valid email address.");
+            }
+         });
+         </script>
+         
+        </div>
+   
+ <div class="footer-bottom">
+    <p>© 2025 Pawfect Petshop. All Rights Reserved.</p>
+    <p><i>This website is created for academic purposes to fulfill the requirements of the individual assignment for Introduction to Web Content Management & Design (IMD318).</i></p>
+    <p><i>Developed by a group of UiTM students.</i></p>
+ </div>
+     </section>
+     
+
+   <script src="main.js"></script>
+</body>
+
+
+</html>

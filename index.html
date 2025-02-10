@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pawfect Petshop</title>
+   <link rel="stylesheet" href="style.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel= "shortcut Icon" type="image/png" href="icon/pawfect.png">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+   <header>
+      <div class="logo-container">
+         <img src="icon/pawfect.png" alt="Logo" width="150" height="auto">
+         <a href="index.html" class="logo">Pawfect Petshop</a>
+      </div>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <div class="navbar">
+         <li><a href="index.html" class="home-active">Home</a></li>
+         <li><a href="about.html">About Us</a></li>
+         <li><a href="products.html">Products</a></li>
+         <li><a href="contact.html">Contact</a></li>
+
+      </div>
+
+      <div class="icons">
+         <i class='bx bx-search'></i>
+         <i class="bx bx-user" id="userIcon"></i>
+         <div id="userProfile" style="display: none;">
+             <h3>Welcome, User!</h3>
+             <p>Please Log In first!</p>
+         </div>
+         <i class='bx bx-shopping-bag'></i>
+      </div>
+   </header>
+
+   
+   <section class="home" id="home">
+
+      <div class="content">
+         <h3 style="animation: slideInBlock 1s ease-out; display: inline-block; overflow: hidden;">Welcome</h3>
+         <h2>Pawfect Petshop </h2>        
+      <a href="about.html" class="btn">Learn more about us!</a>
+      </div>
+   </section>
+
+   <section class="popular">
+      <div class="popular-header">
+        <h1>Let's Explore Our <br><span>Hot Sales</span></h1>
+        <a href="products.html" class="btn">See All <i class="bx bx-right-arrow-alt"></i></a>
+      </div>
+</section>
+
+<section>
+<div class="popular-container">
+   <div class="box">
+      <img src="images/food.jpg" alt="Royal Canin pet food">
+      <h2>Royal Canin</h2>
+      <span>Cat & Dog</span>
+   </div>
+
+   <div class="box">
+      <img src="images/purina.jpg" alt="Purina pet food">
+      <h2>Purina</h2>
+      <span>Cat & Dog</span>
+   </div>
+
+   <div class="box">
+      <img src="images/whiskas.jpg" alt="Whiskas pet food">
+      <h2>Whiskas</h2>
+      <span>Cat</span>
+   </div>
+
+   <div class="box">
+      <img src="images/pawpy kitties.jpg" alt="pawpy kitties">
+      <h2>pawpy kitties</h2>
+      <span>Pets</span>
+   </div>
+
+   <div class="box">
+      <img src="images/aduck.jpg" alt="Aduck">
+      <h2>Aduck</h2>
+      <span>Toys</span>
+   </div>
+   
+   <div class="box">
+      <img src="images/rogz.jpg" alt="ROGZ">
+      <h2>ROGZ</h2>
+      <span>Accessories</span>
+   </div>
+</div>
+</section>
+
+<section class="grooming-promotion">
+   <div class="promotion-header">
+      <h2>Limited Time Grooming Offer!</h2>
+      <p>Give your pet the best grooming experience at a discounted rate!</p>
+   </div>
+
+   <div class="promotion-details">
+      <p>We’re offering an exclusive grooming service at a special price for a limited time only. Don’t miss out!</p>
+      <p><strong>Discount: 20% off</strong></p>
+   </div>
+
+   <div class="video-container">
+      <iframe width="800" height="450" src="https://www.youtube.com/embed/cn21CT7TB68?si=vn6YwXIPFR_SyfaN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   </div>
+   
+
+   <div class="cta">
+      <a href="#bookingForm" class="btn">Book Now & Save!</a>
+   </div>
+
+   <section id="bookingForm" class="booking-section">
+      <div class="booking-container">
+        <h2>Book Your Grooming Appointment Now!</h2>
+        <p>Get your pet pampered with our professional grooming services. Fill out the form below to reserve your spot.</p>
+    
+        <form action="#" method="POST" class="booking-form">
+          <label for="petName">Pet's Name:</label>
+          <input type="text" id="petName" name="petName" required>
+    
+          <label for="ownerName">Owner's Name:</label>
+          <input type="text" id="ownerName" name="ownerName" required>
+    
+          <label for="groomingType">Grooming Service:</label>
+          <select id="groomingType" name="groomingType" required>
+            <option value="basic">Basic Grooming</option>
+            <option value="deluxe">Deluxe Grooming</option>
+            <option value="spa">Spa Treatment</option>
+          </select>
+    
+          <label for="appointmentDate">Preferred Appointment Date:</label>
+          <input type="date" id="appointmentDate" name="appointmentDate" required>
+    
+          <label for="contact">Contact Information:</label>
+          <input type="tel" id="contact" name="contact" placeholder="Phone number" required><br>
+
+          <button type="button" class="submit-btn" onclick="showConfirmation()">Book Now</button>
+       </form>
+
+       <div id="confirmationMessage" style="display: none; margin-top: 20px;">
+          <p style="font-size: 18px; color:rgb(0, 0, 0);">Your booking has been successfully received! We will contact you shortly.</p>
+       </div>
+    </div>
+ </section>
+</section>
+
+   <section class="customers" id="customer">
+      <h2>Why Customers Love Us?</h2>
+      <div class="customers-container">
+
+         <div class="box">
+            <i class="bx bxs-quote-alt-left"></i>
+            <div class="stars">
+            <i class="bx bxs-star" ></i>
+            <i class="bx bxs-star" ></i>
+            <i class="bx bxs-star" ></i>
+            <i class="bx bxs-star" ></i>
+            <i class="bx bxs-star-half" ></i>
+            </div>
+            <p>The pet shop has a variety of supplies for all kinds of pets</p>
+            <div class="review-profile">
+               <img src="images/cat.jpg" alt="">
+               <h3>Kitty</h3>
+            </div>
+         </div>
+
+         <div class="box">
+            <i class="bx bxs-quote-alt-left"></i>
+            <div class="stars">
+            <i class="bx bxs-star" ></i>
+            <i class="bx bxs-star" ></i>
+            <i class="bx bxs-star" ></i>
+            <i class="bx bxs-star" ></i>
+            <i class="bx bxs-star-half" ></i>
+            </div>
+            <p>The staffs are friendly and always ready to help.</p>
+            <div class="review-profile">
+               <img src="images/cat2.jpg" alt="">
+               <h3>Micky Minnie</h3>
+            </div>
+         </div>
+
+         <div class="box">
+            <i class="bx bxs-quote-alt-left"></i>
+            <div class="stars">
+            <i class="bx bxs-star" ></i>
+            <i class="bx bxs-star" ></i>
+            <i class="bx bxs-star" ></i>
+            <i class="bx bxs-star" ></i>
+            <i class="bx bxs-star-half" ></i>
+            </div>
+            <p>The prices are affordable and reasonable.</p>
+            <div class="review-profile">
+               <img src="images/dog.jpg" alt="">
+               <h3>Jerry Tom</h3>
+            </div>
+         </div>
+
+         <div class="box">
+            <i class="bx bxs-quote-alt-left"></i>
+            <div class="stars">
+            <i class="bx bxs-star" ></i>
+            <i class="bx bxs-star" ></i>
+            <i class="bx bxs-star" ></i>
+            <i class="bx bxs-star" ></i>
+            <i class="bx bxs-star-half" ></i>
+            </div>
+            <p>I highly recommend this pet shop to others.</p>
+            <div class="review-profile">
+               <img src="images/dog2.jpg" alt="">
+               <h3>Douglas Pup</h3>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="footer" id="footer">
+         <div class="footer-container">
+            <div class="footer-box">
+               <a href="index.html" class="logo">Pawfect Petshop</a>
+               <p>
+                 <a href="https://www.google.com/maps/place/Lorong+Uni-Central+2,+94300+Kota+Samarahan,+Sarawak" 
+                 target="_blank" rel="noopener noreferrer">
+                    Lorong Uni-Central 2, 94300, Kota Samarahan, Sarawak
+                 </a>
+              </p>
+              
+               <div class="social">
+                 <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer">
+                     <i class='bx bxl-facebook'></i>
+                  </a>
+             <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-twitter'></i>
+             </a>
+             <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-instagram'></i>
+             </a>
+             <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <i class='bx bxl-github'></i>
+             </a>
+               </div>
+            </div>
+      
+            <div class="footer-box">
+               <h2>Customer Care</h2>
+               <a href="#" id="helpLink">Help Centre</a>
+ 
+               <script>
+               document.getElementById('helpLink').addEventListener('click', function(event) {
+                  event.preventDefault();
+                  alert("For help, check out our FAQ section or reach out to us at support@pawfectpetshop.com");
+               });
+               </script>
+               
+               <a href="contact.html">Contact Us</a>
+            </div>
+      
+            <div class="footer-box">
+               <h2>Company</h2>
+               <a href="about.html">About Us</a>
+               <a href="#" id="joinLink">Join Our Team</a>
+ 
+               <script>
+               document.getElementById('joinLink').addEventListener('click', function(event) {
+                  event.preventDefault();
+                  alert("Interested in joining us? Please send your resume to jobs@pawfectpetshop.com.");
+               });
+               </script>
+               
+            </div>
+ 
+            <div class="footer-box">
+             <h2>Newsletter</h2>
+             <p>Get 10% Discount with <br>Email Newsletter</p>
+             <form id="newsletterForm">
+                <input type="email" id="email" placeholder="Enter Your Email" required>
+                <button type="submit">Subscribe</button>
+             </form>
+             <br>
+             <p id="thankYouMessage" style="display: none;">Thank you for subscribing!</p>
+          </div>
+          
+          <script>
+          document.getElementById('newsletterForm').addEventListener('submit', function(event) {
+             event.preventDefault(); 
+             const email = document.getElementById('email').value;
+             if (email) {
+                document.getElementById('thankYouMessage').style.display = 'block';
+                document.getElementById('email').value = '';
+             } else {
+                alert("Please enter a valid email address.");
+             }
+          });
+          </script>
+          
+         </div>
+    
+  <div class="footer-bottom">
+     <p>© 2025 Pawfect Petshop. All Rights Reserved.</p>
+     <p><i>This website is created for academic purposes to fulfill the requirements of the individual assignment for Introduction to Web Content Management & Design (IMD318).</i></p>
+     <p><i>Developed by a group of UiTM students.</i></p>
+  </div>
+
+      <audio id="audioPlayer">
+         <source src="audio/aesthetic audio.mp3" type="audio/mp3">
+         Your browser does not support the audio element.
+       </audio>
+       
+       <button class="paw-button" id="playPauseButton">
+         <i class="bx bx-play"></i> 
+       </button>
+       
+       
+   </section>
+
+   <script src="main.js"></script>
+</body>
+</html>

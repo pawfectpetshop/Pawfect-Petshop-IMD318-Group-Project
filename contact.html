@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pawfect Petshop</title>
+   <link rel="stylesheet" href="style.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel= "shortcut Icon" type="image/png" href="icon/pawfect.png">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+   .navbar a.active {
+   color: white; 
+   background-color: var(--light-orange-color); 
+   border-radius: 5rem; 
+}
+</style>
+</head>
+
+<body>
+   <header>
+      <div class="logo-container">
+         <img src="icon/pawfect.png" alt="Logo" width="150" height="auto">
+         <a href="index.html" class="logo">Pawfect Petshop</a>
+      </div>
+      
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="navbar">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="about.html">About Us</a></li>
+         <li><a href="products.html">Products</a></li>
+         <li><a href="contact.html" class="active">Contact</a></li>
+
+      </ul>
+
+      <div class="icons">
+         <i class='bx bx-search'></i>
+         <i class="bx bx-user" id="userIcon"></i>
+         <div id="userProfile" style="display: none;">
+             <h3>Welcome, User!</h3>
+             <p>Please Log In first!</p>
+         </div>
+         <i class='bx bx-shopping-bag'></i>
+       </div>
+   </header>
+   
+
+  <section class="contact-section">
+    <div class="contact-header">
+      <h1>Contact Us</h1>
+      <p>Feel free to reach out to us for any questions, feedback, or inquiries.</p>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <h2>Find Us Here</h2>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.123456!2d110.1234567!3d1.2345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31fbc1234abcd567%3A0x123456789abcd1234!2sLorong%20Uni-Central%202%2C%2094300%20Kota%20Samarahan%2C%20Sarawak!5e0!3m2!1sen!2smy!4v1234567890" 
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      
+      <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+   <h1>Meet the Team</h1>
+   <div class="team-container">
+      <div class="team-member">
+         <img src="team members/el.jpg" alt="Member 1">
+         <p>Nur Elfiany</p>
+         <p>2022460274</p>
+      </div>
+      <div class="team-member">
+         <img src="team members/laila.jpg"Member 2">
+         <p>Lailatul Alwani </p>
+         <p>2022607546</p>
+      </div>
+      <div class="team-member">
+         <img src="team members/aleya.jpg" alt="Member 3">
+         <p>Aleya Maisarah</p>
+         <p>2022222254</p>
+      </div>
+      <div class="team-member">
+         <img src="team members/marcela.jpg" alt="Member 4">
+         <p>Marcela Alicia</p>
+         <p>2022820668</p>
+      </div>
+      <div class="team-member">
+         <img src="team members/roxianne.jpg" alt="Member 5">
+         <p>Roxianne Remia Apitt</p>
+         <p>2022676142</p>
+      </div>
+   </div>
+</section>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+<section class="footer" id="footer">
+   <div class="footer-container">
+      <div class="footer-box">
+         <a href="index.html" class="logo">Pawfect Petshop</a>
+         <p>
+           <a href="https://www.google.com/maps/place/Lorong+Uni-Central+2,+94300+Kota+Samarahan,+Sarawak" 
+           target="_blank" rel="noopener noreferrer">
+              Lorong Uni-Central 2, 94300, Kota Samarahan, Sarawak
+           </a>
+        </p>
+        
+         <div class="social">
+           <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer">
+               <i class='bx bxl-facebook'></i>
+            </a>
+       <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+          <i class='bx bxl-twitter'></i>
+       </a>
+       <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+          <i class='bx bxl-instagram'></i>
+       </a>
+       <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          <i class='bx bxl-github'></i>
+       </a>
+         </div>
+      </div>
+
+      <div class="footer-box">
+         <h2>Customer Care</h2>
+         <a href="#" id="helpLink">Help Centre</a>
+
+         <script>
+         document.getElementById('helpLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert("For help, check out our FAQ section or reach out to us at support@pawfectpetshop.com");
+         });
+         </script>
+         
+         <a href="contact.html">Contact Us</a>
+      </div>
+
+      <div class="footer-box">
+         <h2>Company</h2>
+         <a href="about.html">About Us</a>
+         <a href="#" id="joinLink">Join Our Team</a>
+
+         <script>
+         document.getElementById('joinLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert("Interested in joining us? Please send your resume to jobs@pawfectpetshop.com.");
+         });
+         </script>
+         
+      </div>
+
+      <div class="footer-box">
+       <h2>Newsletter</h2>
+       <p>Get 10% Discount with <br>Email Newsletter</p>
+       <form id="newsletterForm">
+          <input type="email" id="email" placeholder="Enter Your Email" required>
+          <button type="submit">Subscribe</button>
+       </form>
+       <br>
+       <p id="thankYouMessage" style="display: none;">Thank you for subscribing!</p>
+    </div>
+    
+    <script>
+    document.getElementById('newsletterForm').addEventListener('submit', function(event) {
+       event.preventDefault(); 
+       const email = document.getElementById('email').value;
+       if (email) {
+          document.getElementById('thankYouMessage').style.display = 'block';
+          document.getElementById('email').value = '';
+       } else {
+          alert("Please enter a valid email address.");
+       }
+    });
+    </script>
+    
+   </div>
+
+<div class="footer-bottom">
+<p>© 2025 Pawfect Petshop. All Rights Reserved.</p>
+<p><i>This website is created for academic purposes to fulfill the requirements of the individual assignment for Introduction to Web Content Management & Design (IMD318).</i></p>
+<p><i>Developed by a group of UiTM students.</i></p>
+</div>
+</section>
+
+
+</body>
+</html>
